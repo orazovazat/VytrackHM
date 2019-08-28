@@ -1,4 +1,4 @@
-package com.vytrackHM.tests.components.dashboards;
+package com.vytrackHM.tests.smoke_tests;
 
 import com.vytrackHM.utilities.ConfigurationReader;
 import com.vytrackHM.utilities.TestBase;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import javax.security.auth.login.Configuration;
 
-public class VerifyDashboardPageTest extends TestBase {
+public class MenuOptionsStoreManager extends TestBase {
 
     @Test
     public void verifyDashboardTest(){
