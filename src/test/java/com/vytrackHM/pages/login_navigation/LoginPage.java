@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public LoginPage(){
+    public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -27,12 +27,21 @@ public class LoginPage {
         passwordElement.sendKeys(password, Keys.ENTER);
     }
 
-    public void login(){
-        String username = ConfigurationReader.getProperty("storemanagerusername");
-        String password = ConfigurationReader.getProperty("storemanagerpassword");
-        usernameElement.sendKeys(username);
-        passwordElement.sendKeys(password, Keys.ENTER);
-
+    public void loginAs(String role){
+        String username = "";
+        String password = "";
+        if(role.equalsIgnoreCase("driver")){
+             username = ConfigurationReader.getProperty("driverusername");
+             password = ConfigurationReader.getProperty("driverpassword");
+        }else if(role.equalsIgnoreCase("store manager")) {
+             username = ConfigurationReader.getProperty("storemanagerusername");
+             password = ConfigurationReader.getProperty("storemanagerpassword");
+        }else if(role.equalsIgnoreCase("sales manager")) {
+            username = ConfigurationReader.getProperty("salesmanagerusername");
+            password = ConfigurationReader.getProperty("salesmanagerpassword");
+        }
+            usernameElement.sendKeys(username);
+            passwordElement.sendKeys(password, Keys.ENTER);
     }
 
 }
