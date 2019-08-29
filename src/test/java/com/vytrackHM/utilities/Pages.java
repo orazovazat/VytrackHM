@@ -1,5 +1,6 @@
 package com.vytrackHM.utilities;
 
+import com.vytrackHM.pages.fleet.VehiclesContractsPage;
 import com.vytrackHM.pages.main.MainPage;
 import com.vytrackHM.pages.fleet.VehiclesPage;
 import com.vytrackHM.pages.login_navigation.LoginPage;
@@ -49,6 +50,7 @@ import com.vytrackHM.pages.login_navigation.LoginPage;
     private LoginPage loginPage;
     private VehiclesPage vehiclesPage;
     private MainPage mainPage;
+    private VehiclesContractsPage vehiclesContractsPage;
 
 
     public LoginPage loginPage(){
@@ -70,6 +72,13 @@ import com.vytrackHM.pages.login_navigation.LoginPage;
             mainPage = new MainPage();
         }
         return mainPage;
+    }
+
+    public VehiclesContractsPage vehiclesContractsPage(){
+        if(vehiclesContractsPage == null){
+            vehiclesContractsPage = new VehiclesContractsPage();
+        }
+        return vehiclesContractsPage;
     }
 
 

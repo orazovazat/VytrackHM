@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="50befddc-84d3-4114-9fbc-383a2b62d94c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/fleet/VehiclesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/fleet/VehiclesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/main/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/main/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/tests/smoke_tests/MenuOptionsStoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/tests/smoke_tests/MenuOptionsStoreManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/fleet/VehiclesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/fleet/VehiclesPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/main/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/main/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/tests/smoke_tests/MenuOptionsStoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/tests/smoke_tests/MenuOptionsStoreManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/reports/08_28_2019/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/reports/08_28_2019/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/login_navigation/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/pages/login_navigation/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/tests/components/login_navigation/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/tests/components/login_navigation/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrackHM/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vytrackHM/utilities/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/login_navigation/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/pages/login_navigation/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/utilities/Pages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/vytrackHM/utilities/Pages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/reports/08_29_2019/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/reports/08_29_2019/report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTestPositive">
+  <component name="RunManager" selected="TestNG.PageAccessTest.driverVehicleContractsTest">
+    <configuration name="LoginTest.loginTestNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="VytrackHM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vytrackHM.tests.components.login_navigation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.components.login_navigation" />
+      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.components.login_navigation.LoginTest" />
+      <option name="METHOD_NAME" value="loginTestNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.loginTestPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VytrackHM" />
       <extension name="coverage">
@@ -81,34 +98,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuOptionsStoreManager" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageAccessTest.driverVehicleContractsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VytrackHM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vytrackHM.tests.smoke_tests.*" />
+          <option name="PATTERN" value="com.vytrackHM.tests.components.fleet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.smoke_tests.MenuOptionsStoreManager" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MenuOptionsStoreManager.verifyDashboardTest5" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="VytrackHM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vytrackHM.tests.smoke_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.smoke_tests.MenuOptionsStoreManager" />
-      <option name="METHOD_NAME" value="verifyDashboardTest5" />
+      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.components.fleet" />
+      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.components.fleet.PageAccessTest" />
+      <option name="METHOD_NAME" value="driverVehicleContractsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,17 +116,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuOptionsStoreManager.verifyDashboardTest6" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageAccessTest.salesManagerVehicleContractsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VytrackHM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vytrackHM.tests.smoke_tests.*" />
+          <option name="PATTERN" value="com.vytrackHM.tests.components.fleet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.smoke_tests.MenuOptionsStoreManager" />
-      <option name="METHOD_NAME" value="verifyDashboardTest6" />
+      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.components.fleet" />
+      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.components.fleet.PageAccessTest" />
+      <option name="METHOD_NAME" value="salesManagerVehicleContractsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,17 +134,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuOptionsStoreManager.verifyDashboardTest7" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageAccessTest.storeManagerVehicleContractsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="VytrackHM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vytrackHM.tests.smoke_tests.*" />
+          <option name="PATTERN" value="com.vytrackHM.tests.components.fleet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.smoke_tests.MenuOptionsStoreManager" />
-      <option name="METHOD_NAME" value="verifyDashboardTest7" />
+      <option name="PACKAGE_NAME" value="com.vytrackHM.tests.components.fleet" />
+      <option name="MAIN_CLASS_NAME" value="com.vytrackHM.tests.components.fleet.PageAccessTest" />
+      <option name="METHOD_NAME" value="storeManagerVehicleContractsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PageAccessTest.driverVehicleContractsTest" />
+        <item itemvalue="TestNG.PageAccessTest.salesManagerVehicleContractsTest" />
+        <item itemvalue="TestNG.PageAccessTest.storeManagerVehicleContractsTest" />
+        <item itemvalue="TestNG.LoginTest.loginTestNegative" />
         <item itemvalue="TestNG.LoginTest.loginTestPositive" />
-        <item itemvalue="TestNG.MenuOptionsStoreManager" />
-        <item itemvalue="TestNG.MenuOptionsStoreManager.verifyDashboardTest6" />
-        <item itemvalue="TestNG.MenuOptionsStoreManager.verifyDashboardTest7" />
-        <item itemvalue="TestNG.MenuOptionsStoreManager.verifyDashboardTest5" />
       </list>
     </recent_temporary>
   </component>

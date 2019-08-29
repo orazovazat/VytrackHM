@@ -1,6 +1,9 @@
 package com.vytrackHM.tests.components.login_navigation;
 
+import com.vytrackHM.utilities.ConfigurationReader;
+import com.vytrackHM.utilities.Driver;
 import com.vytrackHM.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {
@@ -60,6 +63,27 @@ public class LoginTest extends TestBase {
             }else{
                 System.out.println("Failed");
             }
+        }
+    }
+
+    @Test
+    public void loginTestNegative() throws InterruptedException {
+        extentLogger = report.createTest("Login test (negative)");
+        pages.loginPage().login(ConfigurationReader.getProperty("salesmanagerusername"), "wrong");
+        pages.loginPage().loginButtonElement.click();
+        String expectedMesaage = "Invalid user name or password.";
+        String actualMessage = pages.loginPage().invalidMessageElement.getText();
+        Assert.assertEquals(actualMessage, expectedMesaage);
+        String pageTitle = Driver.getDriver().getTitle();
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        if(pageTitle.equals(actualUrl)){
+            System.out.println("Passed");
+            System.out.println("Verified that page title and url are same");
+        }else{
+            System.out.println("Failed");
+            System.out.println("The page title and url are not same");
+            System.out.println("Page title: " + pageTitle);
+            System.out.println("Actual URL: " + actualUrl);
         }
 
     }
