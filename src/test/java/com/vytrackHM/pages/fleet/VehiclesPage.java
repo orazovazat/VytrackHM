@@ -14,7 +14,7 @@ public class VehiclesPage {
     @FindBy(xpath = "//*[text()='Vehicles']")
     public WebElement vehiclesElement;
 
-    @FindBy(className = "oro-subtitle")
+    @FindBy(xpath = "//*[contains(text(),'') and contains(@class, 'oro-subtitle')]")
     public WebElement pageNameElememnt;
 
 
