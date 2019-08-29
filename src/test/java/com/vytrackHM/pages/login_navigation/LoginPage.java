@@ -19,8 +19,15 @@ public class LoginPage {
     @FindBy(id = "prependedInput2")
     public WebElement passwordElement;
 
-    @FindBy(id = "prependedInput")
-    public WebElement dashboardElement;
+    @FindBy(id = "_submit")
+    public WebElement loginButtonElement;
+
+    @FindBy(xpath = "//div[text()='Invalid user name or password.']")
+    public WebElement invalidMessageElement;
+
+    @FindBy(xpath = "//h2")
+    public WebElement loginPageNameElement;
+
 
     public void login(String username , String password){
         usernameElement.sendKeys(username);
